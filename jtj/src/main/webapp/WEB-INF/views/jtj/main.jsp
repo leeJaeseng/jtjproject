@@ -14,16 +14,21 @@
     <title>Hello, world!</title>
   </head>
   <body>
-   <div class="container">
+  <jsp:include page="/WEB-INF/views/include/header.jsp"/>
+    
+    <div class="container">
     <header class="d-flex justify-content-center py-3">
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="/jtj/main.do" class="nav-link active" aria-current="page">메인</a></li>
+        <li class="nav-item"><a href="/introduction/intro.do" class="nav-link">소개 페이지</a></li>
+        <li class="nav-item"><a href="/app/app.do" class="nav-link">앱</a></li>
+        <li class="nav-item"><a href="/board/list.do" class="nav-link">고객센터</a></li>
+        <li class="nav-item"><a href="/monitoring/monitoring.do" class="nav-link">모니터링</a></li>
       </ul>
     </header>
+
+   
   </div>
+
   </body>
 </html>

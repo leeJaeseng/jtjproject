@@ -1,4 +1,4 @@
-package com.jtj.controller;
+package com.jtj.main;
 
 import java.text.DateFormat;
 import java.util.Date;

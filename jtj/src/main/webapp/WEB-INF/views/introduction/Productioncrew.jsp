@@ -2,37 +2,26 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-
 <head>
 <meta charset="UTF-8">
-<title>소개 페이지</title>
+<title>제작진</title>
 </head>
   <style>
-.slideshow-container {
-
-width: 100%;
-
-height: 300px;
-
-margin-top: 70px;
-
-margin-left: 660px;
-
-}
-
-.Productioncrew {
-
-margin-left: 400px;
+.Productioncrew1 {
 margin-top: 30px;
-}
+margin-left: 350px;
 
-.Arduino {
-margin-left: 30px;
+}
+.Productioncrew2 {
 margin-top: 30px;
+
+}
+.Productioncrew3 {
+margin-top: 30px;
+
 }
 
-  </style>
-
+</style>
 <body>
 <jsp:include page="/WEB-INF/views/include/header.jsp"/>
    <div class="container" style=margin-left:400px;>
@@ -52,16 +41,15 @@ margin-top: 30px;
       </span>
     </div><!-- /input-group -->
     </div><!-- /.col-lg-6 -->
+    
     </header>
   </div>
-  
-  <div class="select-container">
-
-  <a href="/introduction/Productioncrew.do"><img class="Productioncrew" src="/resources/img/Productioncrew.png"></a>
-  <a href="/introduction/Arduino.do"><img class="Arduino" src="/resources/img/Arduino.png"></a>
-  
-  </div>
-
+ 
+    <div class="profiles">
+    <img class="Productioncrew1" src="/resources/img/ljs.png">
+    <img class="Productioncrew2" src="/resources/img/kth.png">
+    <img class="Productioncrew3" src="/resources/img/jyj.png">
+    </div>
 
 </body>
 </html>

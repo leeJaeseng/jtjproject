@@ -2,10 +2,9 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-
 <head>
 <meta charset="UTF-8">
-<title>소개 페이지</title>
+<title>아두이노</title>
 </head>
   <style>
 .slideshow-container {
@@ -32,7 +31,27 @@ margin-top: 30px;
 }
 
   </style>
-
+ <script>
+    var index = 0;   //이미지에 접근하는 인덱스
+    window.onload = function(){
+        slideShow();
+    }
+    
+    function slideShow() {
+    var i;
+    var x = document.getElementsByClassName("slide1");  //slide1에 대한 dom 참조
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";   //처음에 전부 display를 none으로 한다.
+    }
+    index++;
+    if (index > x.length) {
+        index = 1;  //인덱스가 초과되면 1로 변경
+    }   
+    x[index-1].style.display = "block";  //해당 인덱스는 block으로
+    setTimeout(slideShow, 2000);   //함수를 2초마다 호출
+ 
+}
+</script>
 <body>
 <jsp:include page="/WEB-INF/views/include/header.jsp"/>
    <div class="container" style=margin-left:400px;>
@@ -54,14 +73,14 @@ margin-top: 30px;
     </div><!-- /.col-lg-6 -->
     </header>
   </div>
+
+ 
   
-  <div class="select-container">
-
-  <a href="/introduction/Productioncrew.do"><img class="Productioncrew" src="/resources/img/Productioncrew.png"></a>
-  <a href="/introduction/Arduino.do"><img class="Arduino" src="/resources/img/Arduino.png"></a>
-  
-  </div>
-
-
+  <div class="slideshow-container">
+  <img class="slide1" src="/resources/img/s1.png">
+  <img class="slide1" src="/resources/img/s2.png">
+  <img class="slide1" src="/resources/img/s3.png">
+  <img class="slide1" src="/resources/img/c1.png">
+</div>
 </body>
 </html>

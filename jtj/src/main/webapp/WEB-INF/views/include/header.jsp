@@ -15,7 +15,7 @@
 </head>
 <body>
 <p style="text-align: center;">
-<img alt="Mainpage" src="/resources/img/main.png" width="300" height="200" >
+<a href="/jtj/main.do"><img alt="Mainpage" src="/resources/img/main.png" width="300" height="200" ></a>
 </p>
 
 </body>

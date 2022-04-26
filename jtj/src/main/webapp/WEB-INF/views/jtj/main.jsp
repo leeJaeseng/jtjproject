@@ -20,7 +20,7 @@
   <body>
   <jsp:include page="/WEB-INF/views/include/header.jsp"/>
     <div style=overflow: auto;> 
-    <div class="container" style=margin-left:380px;>
+    <div class="container" style=margin-left:430px;>
     <header class="d-flex justify-content-center py-3">
     
       <ul class="nav nav-pills">

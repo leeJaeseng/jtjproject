@@ -28,7 +28,7 @@
     </div><!-- /.col-lg-6 -->
     </header>
   </div>
-<h2>모니터링 페이지 </h2>
+<jsp:include page="/WEB-INF/views/include/footer.jsp"/>
 
 </body>
 </html>

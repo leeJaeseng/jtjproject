@@ -4,27 +4,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>제작진</title>
+<title>정영진</title>
 </head>
-  <style>
-.Productioncrew1 {
-margin-top: 30px;
-margin-left: 350px;
-
+<style>
+.LoadingContainer {
+margin-left: 330px;
 }
-.Productioncrew2 {
-margin-top: 30px;
-
-}
-.Productioncrew3 {
-margin-top: 30px;
-
-}
-
 </style>
 <body>
 <jsp:include page="/WEB-INF/views/include/header.jsp"/>
-   <div class="container" style=margin-left:400px;>
+  <div class="container" style=margin-left:400px;>
     <header class="d-flex justify-content-center py-3">
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="/jtj/main.do" class="nav-link" aria-current="page">메인</a></li>
@@ -44,12 +33,9 @@ margin-top: 30px;
     
     </header>
   </div>
- 
-    <div class="profiles">
-    <a href="/introduction/ljs.do"><img class="Productioncrew1" src="/resources/img/ljs.png"></a>
-    <a href="/introduction/ktw.do"><img class="Productioncrew2" src="/resources/img/kth.png"></a>
-    <a href="/introduction/jyj.do"><img class="Productioncrew3" src="/resources/img/jyj.png"></a>
-    </div>
+  <div class="LoadingContainer">
+  <img src="/resources/img/Loading.png">
+  </div>
 
 </body>
 </html>

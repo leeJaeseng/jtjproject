@@ -27,6 +27,8 @@
     </div><!-- /.col-lg-6 -->
     </header>
   </div>
-<h2>게시판 리스트</h2>
+  
+  <jsp:include page="/WEB-INF/views/include/footer.jsp"/>
+
 </body>
 </html>

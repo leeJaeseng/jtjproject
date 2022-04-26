@@ -80,6 +80,7 @@ margin-top: 30px;
   <img class="slide1" src="/resources/img/s1.png">
   <img class="slide1" src="/resources/img/s2.png">
   <img class="slide1" src="/resources/img/s3.png">
+  <img class="slide1" src="/resources/img/s4.png">
   <img class="slide1" src="/resources/img/c1.png">
 </div>
 </body>

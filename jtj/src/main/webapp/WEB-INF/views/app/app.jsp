@@ -8,7 +8,7 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/views/include/header.jsp"/>
-   <div class="container" style=margin-left:400px;>
+   <div class="container" style=margin-left:450px;>
     <header class="d-flex justify-content-center py-3">
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="/jtj/main.do" class="nav-link" aria-current="page">메인</a></li>
@@ -27,7 +27,16 @@
     </div><!-- /.col-lg-6 -->
     </header>
   </div>
-<jsp:include page="/WEB-INF/views/include/footer.jsp"/>
+<p style="text-align: center; margin-top:30px">
+<video width="30%" height="20%" autoplay loop muted controls>
+    <source src="/resources/video/App.mp4" type="video/mp4">
+    
+</video>
+</p>
+
+<div class="AppContainer" style=margin-left:790px>
+<h2>지금 다운로드 받으세요 !</h2>
+</div>
 
 </body>
 </html>

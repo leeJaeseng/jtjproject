@@ -9,7 +9,7 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/views/include/header.jsp"/>
- <div class="container" style=margin-left:400px;>
+ <div class="container" style=margin-left:450px;>
     <header class="d-flex justify-content-center py-3">
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="/jtj/main.do" class="nav-link" aria-current="page">메인</a></li>

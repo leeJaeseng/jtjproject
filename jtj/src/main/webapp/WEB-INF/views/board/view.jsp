@@ -1,12 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>게시판 리스트</title>
+<title>게시물 조회</title>
 </head>
 <style>
 .listContainer {
@@ -43,37 +42,17 @@
 		</header>
 	</div>
 	<div class="listContainer">
-		<table>
-			<thead>
-				<tr>
-					<th>번호</th>
-					<th>제목</th>
-					<th>작성일</th>
-					<th>작성자</th>
-					<th>조회수</th>
-				</tr>
-			</thead>
-			<tbody>
+	<form method="post">
 
-				<c:forEach items="${list}" var="list">
-					<tr>
-						<td>
-						<a href="/board/view?bno=${list.bno}">${list.title}</a>
-						</td>
-						<td><fmt:formatDate value="${list.regDate}" pattern="yyyy-MM-dd" /></td>
-						<td>${list.writer}</td>
-						<td>${list.viewCnt}</td>
-					</tr>
+		<label>제목</label> ${view.title}<br /> <label>작성자</label>
+		${view.writer}<br /> <label>내용</label><br /> ${view.content}<br />
+	</form>
 
-				</c:forEach>
-			</tbody>
-
-		</table>
-	<p>
-	<a href="/board/write.do">게시물 작성</a>
-	</p>
+	<div>
+		<a href="/board/modify?bno=${view.bno}">게시물 수정</a>
+		<a href="/board/delete?bno=${view.bno}">게시물 삭제</a>
 	</div>
-	
+	</div>
 
 </body>
 </html>

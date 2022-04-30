@@ -11,8 +11,8 @@
 <configuration>
 
 	<typeAliases>		
-
-	<typeAlias alias="Test" type="com.jtj.bean.TestBean" />
+	
+	<typeAlias alias="Board" type="com.jtj.bean.BoardBean"/>
 
 	</typeAliases>
 

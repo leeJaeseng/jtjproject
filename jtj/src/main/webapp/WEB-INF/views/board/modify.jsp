@@ -1,12 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+    pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>게시판 리스트</title>
+<title>게시물 수정</title>
 </head>
 <style>
 .listContainer {
@@ -42,38 +41,27 @@
 			<!-- /.col-lg-6 -->
 		</header>
 	</div>
-	<div class="listContainer">
-		<table>
-			<thead>
-				<tr>
-					<th>번호</th>
-					<th>제목</th>
-					<th>작성일</th>
-					<th>작성자</th>
-					<th>조회수</th>
-				</tr>
-			</thead>
-			<tbody>
-
-				<c:forEach items="${list}" var="list">
-					<tr>
-						<td>
-						<a href="/board/view?bno=${list.bno}">${list.title}</a>
-						</td>
-						<td><fmt:formatDate value="${list.regDate}" pattern="yyyy-MM-dd" /></td>
-						<td>${list.writer}</td>
-						<td>${list.viewCnt}</td>
-					</tr>
-
-				</c:forEach>
-			</tbody>
-
-		</table>
-	<p>
-	<a href="/board/write.do">게시물 작성</a>
-	</p>
-	</div>
 	
+	<div class="listContainer">
+<form method="post">
+
+<label>제목</label>
+<input type="text" name="title" value="${view.title}"/><br />
+
+<label>작성자</label>
+<input type="text" name="writer" value="${view.writer}" /><br />
+
+<label>내용</label>
+<textarea cols="50" rows="5" name="content">${view.content}</textarea><br />
+
+
+
+<button type="submit">완료</button>
+
+
+</form>
+
+</div>
 
 </body>
 </html>
